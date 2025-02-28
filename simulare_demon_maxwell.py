@@ -5,11 +5,11 @@ import math
 # Inițializare Pygame
 pygame.init()
 
-# Dimensiuni ecran (similar cu 800x600 din turtle)
+# Dimensiuni ecran 
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("Maxwell's Demon Model (Pygame)")
+pygame.dcmndisplay.set_caption("Maxwell's Demon Model (Pygame)")
 
 clock = pygame.time.Clock()
 
