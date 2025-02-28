@@ -33,7 +33,7 @@ class Molecule:
         self.y = y
         self.dx = dx
         self.dy = dy
-        # Calculăm magnitudinea vitezei (folosim formula corectă: √(dx² + dy²))
+        # Calculăm magnitudinea vitezei (folosim formula corectă: sqrt(dx^2 + dy^2))
         self.speed = math.sqrt(dx**2 + dy**2)
         self.color = color
         self.radius = 3  # Raza cercului ce reprezintă molecula
