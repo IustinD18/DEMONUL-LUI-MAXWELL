@@ -5,7 +5,7 @@ import math
 # Inițializare Pygame
 pygame.init()
 
-# Dimensiuni ecran (similar cu 800x600 din turtle)
+# Dimensiuni ecran 
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -21,7 +21,6 @@ sim_bottom = -200
 
 
 def sim_to_screen(x, y):
-    # În Pygame (0,0) e în stânga sus; mutăm originea în centrul ecranului și inversăm axa y
     screen_x = x + screen_width // 2
     screen_y = screen_height // 2 - y
     return (screen_x, screen_y)
