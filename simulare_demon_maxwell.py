@@ -5,11 +5,11 @@ import math
 # Inițializare Pygame
 pygame.init()
 
-# Dimensiuni ecran 
+# Dimensiuni ecran (similar cu 800x600 din turtle)
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.dcmndisplay.set_caption("Maxwell's Demon Model (Pygame)")
+pygame.display.set_caption("Maxwell's Demon Model (Pygame)")
 
 clock = pygame.time.Clock()
 
@@ -19,7 +19,7 @@ sim_right = 300
 sim_top = 200
 sim_bottom = -200
 
-# Funcție de transformare a coordonatelor de simulare (centru la (0,0)) în coordonate Pygame
+
 def sim_to_screen(x, y):
     # În Pygame (0,0) e în stânga sus; mutăm originea în centrul ecranului și inversăm axa y
     screen_x = x + screen_width // 2
@@ -33,7 +33,7 @@ class Molecule:
         self.y = y
         self.dx = dx
         self.dy = dy
-        # Calculăm magnitudinea vitezei (folosim formula corectă: sqrt(dx^2 + dy^2))
+        # Calculăm magnitudinea vitezei 
         self.speed = math.sqrt(dx**2 + dy**2)
         self.color = color
         self.radius = 3  # Raza cercului ce reprezintă molecula
